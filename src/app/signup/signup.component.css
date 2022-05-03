@@ -1,0 +1,7 @@
+.image{
+    height:15em; 
+    background-size:cover;
+    width:auto;
+    background-image:url("/assets/gprec-log.jpg");
+    background-position:50% 50%;
+  }

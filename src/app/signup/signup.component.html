@@ -1,0 +1,31 @@
+
+
+
+<div class="bootstrap-wrapper">
+  <div class="container"  >
+    <div class="row" style="margin-top: 10%; text-align: center;">
+    <div class="col-md-6 offset-md-3">
+      <form (ngSubmit)="submit()">
+      <img class="image" src="../../assets/gprec-logo.jpg " alt="logo.png"/>
+        <mat-form-field appearance="outline" style="width: 100%;">
+          <mat-label>Enter UserName</mat-label>
+          <input matInput placeholder="Placeholder" name="user.username" [(ngModel)]="user.userName">
+          <mat-icon matSuffix style="color: green;">sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%;" >
+          <mat-label>Enter Password</mat-label>
+          <input matInput placeholder="Placeholder" name="user.password" type="password" [(ngModel)]="user.password">
+          <mat-icon  matSuffix style="color: rgb(128, 0, 21);">sentiment_very_dissatisfied</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%;">
+          <mat-label>Enter Email</mat-label>
+          <input matInput placeholder="Placeholder" type="email" [(ngModel)]="user.email" name="user.email">
+          <mat-icon  matSuffix style="color: rgb(128, 0, 21);">sentiment_very_dissatisfied</mat-icon>
+        </mat-form-field>
+        <button mat-raised-button color="primary" >Signup</button>
+    <button mat-raised-button color="accent" style="margin-left: 20px;">Reset</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
